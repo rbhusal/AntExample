@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+	 <project name="My First Ant Project" default="MyTarget4">
+        
+		<target name="MyTarget1">
+      	  <echo>target1</echo>
+		  
+		  </target>
+		  
+		  <target name= "MyTarget2" depends = "MyTarget1">
+		  <echo>target2</echo>
+		  
+		  </target>
+		  
+		  <target name= "MyTarget3" depends = "MyTarget2">
+		  <echo>target3</echo>
+
+		  </target>
+
+		  <target name= "MyTarget4" depends = "MyTarget3">
+		  <echo>target4</echo>
+
+		  </target>
+
+		  </project>
